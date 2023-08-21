@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/* start global css */
+:root{
+    --blue:#1870c1;
+    --black:#261F11;
+    --gray:#F2F2F2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.25s ease-in-out; 
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline;
+}
+button{
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.container{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* end global css */
+
+
+
+/* start header section */
+header{
+    min-height: 10vh;
+    background-color: white;
+    box-shadow: 0 0 3px 0px var(--blue);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+header .container{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+header .container .logo {
+    width: 300px;
+    font-weight: 700;
+    font-size: 30px;
+    flex-wrap: wrap;
+    color: var(--blue);
+}
+header .container .home {
+    font-size: 1rem;
+    font-weight: 400;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+header .container .home a{
+    padding-left: 10px;
+}
+header .container .home a:hover{
+    color: var(--blue);
+}
+header .container .home i{
+    padding-left: 10px;
+    font-size: 0,2rem;
+
+}
+header .container .fa-bars {
+    display: none;
+    font-size: 1.8rem;
+}
+@media (max-width:  1200px) {
+    header .container .home {
+    display: none;
+    }
+    header .container .fa-bars {
+    display: block;
+    }
+}
+.searchbox{
+    position: fixed;
+    top: 0;
+    background-color: #E9F2FA;
+    color: var(--blue);
+    width: 40%;
+    margin-left: 200px;
+    height: 50vh;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: none;
+}
+.searchbox button{
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+}
+.searchbox input{
+    background-color: transparent;
+    color: var(--black);
+    border: none;
+    border: solid 2px #555;
+    padding: 10px 40px;
+    margin: 50px 0 20px;
+}
+.searchbox .inputbox {
+    position: relative;
+}
+.searchbox .inputbox .fa-magnifying-glass{
+    position: absolute; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(50%);
+}
+/* end header section */
+
+
+
+/* start main section */
+main {
+    height: 90vh;
+    margin-top: 10vh;
+    background-image: url(../images/smiling-female-business-leader-with-arms-crossed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main .container {
+    height: 90vh;
+    margin-left: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: end;
+    justify-content: end;
+}
+
+main .container .box {
+width: 500px;
+height: 200px;
+margin: auto 200px ;
+margin-bottom: 30%;
+padding: 30px;
+border-radius: 50px 0 0 50px ;
+background-color: #fff;
+line-height: 50px;
+}
+main .container .box  .a1{
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+main .container .box p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: inline-block;
+}
+main .container .box h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+/* end main section */
+
+/* start business section */
+.business{
+    height: 70vh;
+    background-color: #E9F2FA;
+}
+.business .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: end;
+}
+.business .container .boxs{
+    width: 400px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 10px;
+    line-height: 40px;
+
+}
+.business .container .boxs h2{
+    font-size: 2rem;
+    font-weight: 300;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+.business .container .boxs h3{
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.business .container .boxs p span{
+    color: var(--blue);
+}
+.business .container .box{
+width: 500px;
+height: 350px;
+margin-top: -150px;
+margin-left: 500px;
+padding: 20px;
+border-radius: 50px 0 0 50px;
+background-color: #fff;
+}
+.business .container .box p{
+padding: 25px;
+font-size: 0.9rem;
+font-weight: 300;
+font-weight: bold;
+margin: auto;
+display: inline-block;
+}
+.business .container .box .p{
+    padding: 25px;
+    font-size: 0.8rem;
+    margin-top: 30px;
+    font-weight: 300;
+    display: inline-block;
+    color: var(--blue);
+    }
+/* end business section */
+
+/* start section section */
+section{
+    height: 60vh;
+
+}
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 185px;
+}
+section .container .title{
+    width: 180px;
+    height: 150px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-weight: bold;
+    }
+section .container .box{
+    width: 230px;
+    height: 300px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--blue);
+    color: var(--gray);
+    border-radius: 30px ;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: auto;
+    margin-top: 50px;
+    }
+    section .container .box .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50% ;
+    background-color: #fff;
+    margin-top: 88px;
+    margin-right: 60px;
+    margin-left: 110px;
+    }
+    section .container .box .icon i{
+    color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    padding: 20px;
+    font-size: 2rem;
+    }
+    section .container .box .icon1{
+        width: 80px;
+        height: 80px;
+        border-radius: 50% ;
+        background-color: #fff;
+        margin-top: 110px;
+        margin-right: 60px;
+        margin-left: 110px;
+        }
+        section .container .box .icon1 i{
+        color: var(--blue);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 1px;
+        padding: 20px;
+        font-size: 2rem;
+    
+        }
+    /* enc section section */
+
+    /* start article section */
+    article{
+    height: 70vh;
+    background-image: url(../images/low-angle-businessman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    article .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: end;
+    }
+    article .container .box {
+    width: 500px;
+    height: 250px;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius:  0 50px 50px 0 ;
+    background-color: #fff;
+    }
+    article .container .box h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    }
+    article .container .box p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 400px;
+    line-height: 22px;
+    display: inline-block;
+    }
+    /* end article section */
+
+    /* start Tachen section */
+
+    .Tachen{
+    height: 65vh;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 3px 0px var(--blue);
+    }
+    .Tachen .container .title{
+    width: 800px;
+    margin: auto;
+    }
+    .Tachen .container .title h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--blue);
+    }
+    .Tachen .container .title p{
+        width: 78%;
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .Tachen .container .box_1 {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: end;
+    gap: 15px;
+    margin: auto;
+    }
+    .Tachen .container .box_1 .box{
+        background-color: var(--gray);
+        width: 185px;
+        height: 185px;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: var(--gray);
+        border-radius: 30px ;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        margin: auto;
+        line-height: 60px;
+    }
+        .Tachen .container .box_1 .box p{
+            width: 65%;
+            font-size: 0.8rem;
+            font-weight: bold;
+            font-weight: 300;
+            display: inline-block;
+            color: var(--black);
+        }
+        .Tachen .container .box_1 .box h3{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--blue);
+        }
+        /* end Tachen section */
+
+        /* start Trigger section */
+        .Trigger{
+            height: 115vh;
+            width: 90%;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+            
+        }
+        .Trigger .container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: end;
+            margin: auto;
+            
+        }
+
+    #myImg {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #myImg:hover {opacity: 0.7;}
+    
+    .Trigger .container .title{
+        padding: 20px;
+        text-align: center; 
+        width: 70%;
+        margin: auto;
+    }
+    .Trigger .container .title p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    /* end Trigger section */
+    /* start contact section */
+    .contact{
+        height: 40vh;
+        padding: 10px;
+        background-color: var(--blue);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: end;
+    }
+    .contact .container{
+    margin-bottom: 50px;
+    }
+    .contact .container .box_2{
+    width: 600px;
+
+    }
+    .contact .container .box_2 h2{
+    color: #fff;
+    margin: auto;
+    }
+    .contact .container .aa{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-color:#fff;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-right: 300px; 
+    margin-top: 40px;
+    }
+    .contact .container .aa:hover{
+    background-color: var(--blue);
+    color: #fff;
+    }
+    /* end contact section */
+
+    /* start get_Plan section*/
+.get_Plan{
+    height: 80vh;
+    padding: 10px;
+    background-color: #fff;
+
+}
+.get_Plan .container{
+margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: end;
+}
+.get_Plan .container .main-left{
+width: 250px;
+}
+.get_Plan .container .main-left h2{
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.get_Plan .container .main-left p{
+    color: var(--black);
+    font-size: 0.8rem;
+}
+.get_Plan .container .main-left .btns{
+    padding: 10px 50px;
+    background-color:var(--blue);
+    border-color:var(--blue);
+    border-width: 2px;
+    border-style: solid;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 40px;
+}
+.get_Plan .container .main-left .btns:hover{
+
+    background-color:#fff;
+    color:var(--black);
+}
+
+.get_Plan .container .main_right{
+    width: 80px;
+    height: 150px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-top: 200px;
+    padding: 30px;
+    margin-bottom:180px;
+    display: flex;
+    gap: 20px;
+    text-align: center; 
+    margin-left: 60px;
+    }
+.get_Plan .container .main_right .box_1{
+    width: 330px;
+    height: 380px;
+    background-color: var(--blue);
+    color: var(--gray);
+    border-radius: 40px ;
+    padding: 80px;
+    }
+    .get_Plan .container .main_right .box_1 .ico{
+    width: 80px;
+    height: 80px;
+    margin-top: -120px;
+    margin-left: 10px;
+    color: var(--black);
+    border-radius: 50%;
+    margin-bottom: 50px;
+    background-color: var(--gray);
+        }
+    .get_Plan .container .main_right .box_1 i{
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+    .get_Plan .container .main_right .box_1 h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        }
+        .get_Plan .container .main_right .box_1 p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin: auto;
+        display: inline-block;
+        padding: 5px;
+        }
+.get_Plan .container .main_right .box_1 a {
+    padding: 10px 30px;
+    background-color: #fff;
+    border-color:#fff;
+    border-width: 2px;
+    border-style: solid;
+    color: var(--black);
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: inline-block;
+    margin-top:5px;
+    margin: auto ;
+    margin-left: -5px;
+    margin-top: 40px;
+    }
+    .get_Plan .container .main_right .box_1 a:hover{
+        background-color: var(--blue);
+        color: #fff;
+        }
+/* end get_Plan section*/
+
+
+/* start form section*/
+/* Add padding to containers */
+footer{
+    height: 90vh;
+    padding: 60px;
+    background-image: url(../images/young-handsome-business-man-with-laptop-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+footer form{
+    height: 470px;
+    width: 500px;
+    background-color: #fff;
+    margin-left: -15px;
+    border-radius:0 50px 50px 0 ;
+}
+footer form .boxs{
+    height: 400px;
+    width: 450px;
+    margin-left: -60px;
+    margin-top: 2s0px;
+    padding: 20px;
+}
+footer form .boxs input{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #E9F2FA;
+    
+}
+footer form .boxs  .mes{
+height: 100px;
+}
+footer form p{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+footer form a{
+    color: dodgerblue;
+    margin-left: 10px;
+}
+footer form b{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+footer form .boxs .registerbtn {
+    background-color: var(--blue);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0; 
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+footer form .boxs .registerbtn:hover {
+    background-color:#E9F2FA;
+    color:var(--black);
+}
+/* end form section*/
+
+/* start the_end section*/
+.the_end{
+    height: 12vh;
+    color: #fff;
+    background-color: #333333;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+.the_end .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: end;
+    padding: 20px;
+}
+.the_end .container .the{
+    width: 400px;
+    font-weight: 700;
+    font-size: 30px;
+    flex-wrap: wrap;
+    color: var(--blue);
+}
+.the_end .container .end{
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+.the_end .container .icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: end;
+    gap: 5px;
+    margin-left: 270px;
+}
+.the_end .container .icon .icos{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.the_end .container .icon .icos i{
+    font-size: 0.9rem;
+    font-weight: 300; 
+    margin-top: 4px;
+    margin-left: 4px;
+    color: var(--black);
+}
+/* start the_end section*/
+.up{
+    width: 80px;
+    height: 80px;
+
+    position: fixed;
+    margin-top: 450px;
+    margin-left: 1200px;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 50% ;
+    display: none;
+}
+.up i{
+    color: var(--black  );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    padding: 10px;
+    font-size: 2rem;
+}
